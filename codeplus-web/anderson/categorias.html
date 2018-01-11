@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="utf-8">
+		<title> Code Plus </title>
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<!-- #CSS Links -->
+		<link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-production-plugins.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-production.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-skins.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="css/smartadmin-rtl.min.css"> 
+		<link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" media="screen" href="css/demo.min.css">
+		<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+		<link rel="icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+		<!-- #GOOGLE FONT -->
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,300,400,700">
+
+		<!-- #APP SCREEN / ICONS -->
+		<!-- Specifying a Webpage Icon for Web Clip
+		Ref: https://developer.apple.com/library/ios/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html -->
+		<link rel="apple-touch-icon" href="img/splash/sptouch-icon-iphone.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="img/splash/touch-icon-ipad.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="img/splash/touch-icon-iphone-retina.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="img/splash/touch-icon-ipad-retina.png">
+
+		<!-- iOS web-app metas : hides Safari UI Components and Changes Status Bar Appearance -->
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<!-- Startup image for web apps -->
+		<link rel="apple-touch-startup-image" href="img/splash/ipad-landscape.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)">
+		<link rel="apple-touch-startup-image" href="img/splash/ipad-portrait.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)">
+		<link rel="apple-touch-startup-image" href="img/splash/iphone.png" media="screen and (max-device-width: 320px)">
+		<style>
+			.s2 {
+				color: #D14;
+			}
+
+			.c1 {
+				color: #998;
+				font-style: italic;
+			}
+
+			.mi {
+				color: #099;
+			}
+		</style>
+	</head>
+
+	
+	<!--
+
+	TABLE OF CONTENTS.
+	
+	Use search to find needed section.
+	
+	===================================================================
+	
+	|  01. #CSS Links                |  all CSS links and file paths  |
+	|  02. #FAVICONS                 |  Favicon links and file paths  |
+	|  03. #GOOGLE FONT              |  Google font link              |
+	|  04. #APP SCREEN / ICONS       |  app icons, screen backdrops   |
+	|  05. #BODY                     |  body tag                      |
+	|  06. #HEADER                   |  header tag                    |
+	|  07. #PROJECTS                 |  project lists                 |
+	|  08. #TOGGLE LAYOUT BUTTONS    |  layout buttons and actions    |
+	|  09. #MOBILE                   |  mobile view dropdown          |
+	|  10. #SEARCH                   |  search field                  |
+	|  11. #NAVIGATION               |  left panel & navigation       |
+	|  12. #MAIN PANEL               |  main panel                    |
+	|  13. #MAIN CONTENT             |  content holder                |
+	|  14. #PAGE FOOTER              |  page footer                   |
+	|  15. #SHORTCUT AREA            |  dropdown shortcuts area       |
+	|  16. #PLUGINS                  |  all scripts and plugins       |
+	
+	===================================================================
+	
+	-->
+	
+	<!-- #BODY -->
+	<!-- Possible Classes
+
+		* 'smart-style-{SKIN#}'
+		* 'smart-rtl'         - Switch theme mode to RTL
+		* 'menu-on-top'       - Switch to top navigation (no DOM change required)
+		* 'no-menu'			  - Hides the menu completely
+		* 'hidden-menu'       - Hides the main menu but still accessable by hovering over left edge
+		* 'fixed-header'      - Fixes the header
+		* 'fixed-navigation'  - Fixes the main menu
+		* 'fixed-ribbon'      - Fixes breadcrumb
+		* 'fixed-page-footer' - Fixes footer
+		* 'container'         - boxed layout mode (non-responsive: will not work with fixed-navigation & fixed-ribbon)
+	-->
+	<body class="smart-style-0 .top-navigation .container">
+	
+
+		<!-- #HEADER -->
+		<header id="header">
+			<div id="logo-group">
+
+				<!-- PLACE YOUR LOGO HERE -->
+				<span> <img src="img/logo.png" alt="Code Plus"> </span>
+			</div>
+				<!-- END AJAX-DROPDOWN -->
+			</div>
+				<div>
+					<ul class="header-dropdown-list hidden-xs">
+					<li>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"> <img src="img/blank.gif" class="flag flag-br" alt="Brasil"> <span> BR</span> <i class="fa fa-angle-down"></i> </a>
+						<ul class="dropdown-menu pull-right">
+							<li class="active">
+								<a href="javascript:void(0);"><img src="img/blank.gif" class="flag flag-br" alt="Brasil"> Português</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);"><img src="img/blank.gif" class="flag flag-us" alt="United States"> English</a>
+							</li>
+							<li>
+								<a href="javascript:void(0);"><img src="img/blank.gif" class="flag flag-es" alt="Spanish"> Español</a>
+							</li>
+							
+						</ul>
+					</li>
+				</ul>
+</div>
+			
+			<!-- end projects dropdown -->
+					
+			<!-- pulled right: nav area -->
+			<div class="pull-right">
+				
+				<!-- collapse menu button -->
+				<div id="hide-menu" class="btn-header pull-right">
+					<span> <a href="javascript:void(0);" data-action="toggleMenu" title="Collapse Menu"><i class="fa fa-reorder"></i></a> </span>
+				</div>
+				<!-- end collapse menu -->
+				
+				<!-- #MOBILE -->
+				<!-- Top menu profile link : this shows only when top menu is active -->
+				<ul id="mobile-profile-img" class="header-dropdown-list hidden-xs padding-5">
+					<li class="">
+						<ul class="dropdown-menu pull-right">
+							<li>
+								<a href="javascript:void(0);" class="padding-10 padding-top-0 padding-bottom-0"><i class="fa fa-cog"></i>Configurações</a>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<a href="javascript:void(0);" class="padding-10 padding-top-0 padding-bottom-0" data-action="launchFullscreen"><i class="fa fa-arrows-alt"></i> Tela <u>C</u>heia</a>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<a href="login.html" class="padding-10 padding-top-5 padding-bottom-5" data-action="userLogout"><i class="fa fa-sign-out fa-lg"></i> <strong><u>L</u>ogout</strong></a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+
+				<!-- logout button -->
+				<div id="logout" class="btn-header transparent pull-right">
+					<span> <a href="login.html" title="Sign Out" data-action="userLogout" data-logout-msg="You can improve your security further after logging out by closing this opened browser"><i class="fa fa-sign-out"></i></a> </span>
+				</div>
+				<!-- end logout button -->
+
+				<!-- search mobile button (this is hidden till mobile view port) -->
+				<div id="search-mobile" class="btn-header transparent pull-right">
+					<span> <a href="javascript:void(0)" title="Search"><i class="fa fa-search"></i></a> </span>
+				</div>
+				<!-- end search mobile button -->
+				
+				<!-- #SEARCH -->
+				<!-- input: search field -->
+				<form action="#ajax/search.html" class="header-search pull-right">
+					<input id="search-fld" type="text" name="param" placeholder="Find reports and more">
+					<button type="submit">
+						<i class="fa fa-search"></i>
+					</button>
+					<a href="javascript:void(0);" id="cancel-search-js" title="Cancel Search"><i class="fa fa-times"></i></a>
+				</form>
+				<!-- end input: search field -->
+
+				<!-- fullscreen button -->
+				<div id="fullscreen" class="btn-header transparent pull-right">
+					<span> <a href="javascript:void(0);" data-action="launchFullscreen" title="Full Screen"><i class="fa fa-arrows-alt"></i></a> </span>
+				</div>
+				<!-- end fullscreen button -->
+
+				<!-- multiple lang dropdown : find all flags in the flags page -->
+				
+				<!-- end multiple lang -->
+
+			</div>
+			<!-- end pulled right: nav area -->
+
+		</header>
+		<!-- END HEADER -->
+
+		<!-- #NAVIGATION -->
+		<!-- Left panel : Navigation area -->
+		<!-- Note: This width of the aside area can be adjusted through LESS/SASS variables -->
+		<aside id="left-panel">
+
+			<!-- User info -->
+			
+			<!-- end user info -->
+
+			<!-- NAVIGATION : This navigation is also responsive
+
+			To make this navigation dynamic please make sure to link the node
+			(the reference to the nav > ul) after page load. Or the navigation
+			will not initialize.
+			-->
+			<nav>
+				<ul>
+				<li class="top-menu-invisible">
+						<a href="#" title="Dashboard"><i class="fa fa-lg fa-fw fa-home"></i> <span class="menu-item-parent">Home</span></a>
+						<ul>
+							<li class="top-menu-invisible">
+								<a href="index.html" title="Dashboard"><i class="fa fa-lg fa-fw fa-sitemap"></i><span class="menu-item-parent ">Visão geral</span></a>
+							</li>
+							<li class="">
+								<a href="inbox.html" title="Orçamento"><i class="fa fa-lg fa-fw fa-usd"></i><span class="menu-item-parent">Orçamentos recebidos</span></a>
+							</li>
+						</ul>	
+					</li>
+					<li class="active">
+						<a href="#"><i class="fa fa-lg fa-fw fa-cube txt-color-blue"></i> <span class="menu-item-parent">Catálogo</span></a>
+						<ul>
+							<li class="active">
+								<a href="#" title="Categoria"><i class="fa fa-lg fa-fw fa-table"></i> <span class="menu-item-parent">Categorias</span></a>
+							</li>
+							<li class="">
+								<a href="#" title="Produtos"><i class="fa fa-lg fa-fw fa-cube"></i> <span class="menu-item-parent">Produtos</span></a>
+							</li>
+							<li>
+								<a href="#" title="Itens"><i class="fa fa-lg fa-gear"></i>  Itens</a>
+							</li>
+							<li>
+								<a href="#" title="Atributos"><i class="fa fa-lg fa-list-alt"></i>  Atributos</a>
+							</li>
+						</ul>
+					</li>
+					<li class="top-menu-invisible">
+						<a href="#"><i class="fa fa-lg fa-fw fa-male txt-color-blue"></i> <span class="menu-item-parent">Usuários</span></a>
+						<ul>
+							<li class="">
+								<a href="#" title="Adicionar user"><i class="fa fa-lg fa-fw fa-plus"></i> <span class="menu-item-parent">Adicionar</span></a>
+							</li>
+							<li class="#">
+								<a href="#" title="Remover user"><i class="fa fa-lg fa-fw fa-minus"></i> <span class="menu-item-parent">Remover</span></a>
+							</li>
+							<li>
+								<a href="#" title="Adicionar grupos"><i class="fa fa-lg fa-fw fa-group"></i> Grupos</a>
+							</li>
+							
+						</ul>
+					</li>
+			</nav>
+
+			<span class="minifyme" data-action="minifyMenu"> <i class="fa fa-arrow-circle-left hit"></i> </span>
+
+		</aside>
+		<!-- END NAVIGATION -->
+
+
+		<!-- MAIN PANEL -->
+		<div id="main" role="main">
+
+			<!-- RIBBON -->
+			<div id="ribbon">
+
+				<span class="ribbon-button-alignment"> <span id="refresh" class="btn btn-ribbon" data-action="resetWidgets" data-title="refresh"  rel="tooltip" data-placement="bottom" data-original-title="<i class='text-warning fa fa-warning'></i> Warning! This will reset all your widget settings." data-html="true"> <i class="fa fa-refresh"></i> </span> </span>
+
+				<!-- breadcrumb -->
+				<ol class="breadcrumb">
+					<li>
+						Home
+					</li>
+					<li>
+						Catálogo
+					</li>
+					<li>
+						Categorias
+					</li>
+				</ol>
+				<!-- end breadcrumb -->
+
+				<!-- You can also add more buttons to the
+				ribbon for further usability
+
+				Example below:
+
+				<span class="ribbon-button-alignment pull-right">
+				<span id="search" class="btn btn-ribbon hidden-xs" data-title="search"><i class="fa-grid"></i> Change Grid</span>
+				<span id="add" class="btn btn-ribbon hidden-xs" data-title="add"><i class="fa-plus"></i> Add</span>
+				<span id="search" class="btn btn-ribbon" data-title="search"><i class="fa-search"></i> <span class="hidden-mobile">Search</span></span>
+				</span> -->
+
+			</div>
+			<!-- END RIBBON -->
+
+			<!-- MAIN CONTENT -->
+			<div id="content">
+
+				<!-- row -->
+				<div class="row">
+
+					<!-- col -->
+					<div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+						<h1 class="page-title txt-color-blueDark"><!-- PAGE HEADER --><i class="fa-fw fa fa-home"></i> Catálogo <span>>
+							Categorias </span></h1>
+					</div>
+					<!-- end col -->
+
+					<!-- right side of the page with the sparkline graphs -->
+					<!-- col -->
+					
+					<!-- end col -->
+
+				</div>
+				<!-- end row -->
+
+				<!--
+				The ID "widget-grid" will start to initialize all widgets below
+				You do not need to use widgets if you dont want to. Simply remove
+				the <section></section> and you can use wells or panels instead
+				-->
+
+				<!-- widget grid -->
+				<section id="widget-grid" class="">
+
+					<!-- row -->
+					<div class="row">
+
+						<!-- NEW WIDGET START -->
+						<article class="col-xs-1 col-sm-2 col-md-12 col-lg-12">
+
+							<table id="jqgrid"></table>
+							<div id="pjqgrid"></div>
+
+
+						</article>
+						<br>
+						<div class="col-sm-6 col-md-2 col-lg-12">
+						<!-- <br> -->
+						
+						</div>
+						<!-- botoes -->
+						<div class="col-sm-6 col-md-2 col-lg-3">
+
+							<div class="jarviswidget jarviswidget-color-greenDark" id="wid-id-100" data-widget-editbutton="false" data-widget-deletebutton="false" data-widget-togglebutton="false" data-widget-fullscreenbutton="false" >
+									<header>
+										<h2>Arquivos</h2>				
+									</header>
+								<div>
+								
+									<div class="widget-body">
+										<div class="well well-sm well-light">
+											
+											<a href="#" id="modal_link" class="btn bg-color-purple txt-color-white">Enviar arquivos</a>
+										</div>
+									</div>
+								</div>
+								<!-- end widget div -->
+								
+							</div>
+						</div>
+					<!-- end row -->
+						<div class="col-sm-6 col-md-2 col-lg-3">
+
+							<div class="jarviswidget jarviswidget-color-blueLight" id="wid-id-101" data-widget-editbutton="false" data-widget-deletebutton="false" data-widget-togglebutton="false" data-widget-fullscreenbutton="false">
+									<header>
+										<h2>Layout</h2>				
+									</header>
+								<div>
+									<div class="widget-body">
+										<div class="well well-sm well-light">
+											
+											<a href="#" id="modal_link3" class="btn bg-color-yellow txt-color-white">Escolher layout</a>
+										</div>
+									</div>
+								</div>
+								<!-- end widget div -->
+								
+							</div>
+						</div>
+					<!-- end row -->
+						<div class="col-sm-6 col-md-2 col-lg-6">
+
+							<div class="jarviswidget jarviswidget-color-redLight" id="wid-id-102" data-widget-editbutton="false" data-widget-deletebutton="false" data-widget-togglebutton="false" data-widget-collapsed="true">
+									<header>
+										<h2>Edição geral</h2>				
+									</header>
+								<div>
+									<div class="widget-body">
+										<div class="well well-lg well-light">
+											<fieldset>
+												<section>
+													    <label class="label" style="color:black;" >Selecionar a categoria</label>
+													<br>
+													     <label class="select">
+														<select>
+															<option value="0">Incluir nova categoria</option>
+															<option value="1">Desenvolvimento web</option>
+															<option value="2">Acessoria</option>
+															<option value="3">Analise de SEO</option>
+															<option value="4">IoT</option>
+															<option value="5">Programação</option>
+															<option value="6">Consultoria</option>
+															<option value="7">Manutenção</option>
+															<option value="8">Mobile app</option>
+															<option value="9">Hospedagem</option>
+															<option value="10">Catalogo</option>
+														</select></label>
+												</section>
+												<br>
+												<section>
+													    <label class="label" style="color:black;">Nome</label>
+													<br>
+													     <label class="input">
+														<input type="text">
+													</label>
+												</section>
+												     <section>
+													    <label class="label" style="color:black;">Url</label>
+													<br>
+													     <label class="input">
+														<input type="text">
+													</label>
+												</section>
+													<br>
+												<section section style="position:relative;">
+												<article class="col-sm-12 col-md-10 col-lg-6">
+			
+			<!-- Widget ID (each widget will need unique ID)-->
+			<div class="jarviswidget jarviswidget-color-white" id="wid-id-300" data-widget-colorbutton="false" data-widget-editbutton="false" data-widget-togglebutton="false" data-widget-fullscreenbutton="false" data-widget-sortable="false" data-widget-deletebutton="false">
+			<label class="label" style="color:black;">Descrição</label>
+				<header>
+					<span class="widget-icon"> <i class="fa fa-pencil"></i> </span>
+					<h2></h2>
+
+				</header>
+
+				<!-- widget div-->
+				<div>
+
+					<!-- widget edit box -->
+					<div class="jarviswidget-editbox">
+						<!-- This area used as dropdown edit box -->
+
+					</div>
+					<!-- end widget edit box -->
+
+					<!-- widget content -->
+					<div class="widget-body no-padding">
+
+						 <div class="summernote">
+							
+						</div>
+						
+						<div class="widget-footer smart-form">
+
+						<div class="btn-group">
+							
+							<button class="btn btn-sm btn-primary" type="button">
+								<i class="fa fa-times"></i> Cancelar
+							</button>	
+										
+						</div>
+						<div class="btn-group">
+							
+							<button class="btn btn-sm btn-success" type="button">
+								<i class="fa fa-check"></i> Salvar
+							</button>	
+							
+						</div>
+
+							<label class="checkbox pull-left">
+								<input type="checkbox" checked="checked" name="autosave" id="autosave">
+								<i></i>Salvar automaticamente 
+							</label> 
+
+						</div>
+						
+					</div>
+					<!-- end widget content -->
+
+				</div>
+				<!-- end widget div -->
+
+			
+												
+			</section>
+			<br>
+												
+												</article>
+			</div>
+			<div class="widget-body">
+				<div class="well well-sm well-light col-sm-4 col-md-10 col-lg-2 bg-color-blueLight">
+					<section>
+						        <label class="label" style="color:black;" >Status da Categoria</label><br>
+						        <label class="toggle">
+							        <input type="radio" name="radio-toggle" checked="checked">
+							    <i data-swchon-text="ON" data-swchoff-text="OFF"></i>Ativo</label><br>
+								    <label class="toggle">
+									            <input type="radio" name="radio-toggle">
+									    <i data-swchon-text="ON" data-swchoff-text="OFF"></i>Inativo</label>
+					</section>
+					
+			</fieldset>									
+										
+											
+										</div>
+										<section>
+										
+										</section>
+								</div>
+							<!-- end widget -->
+
+						</article>
+						<!-- WIDGET END -->
+</div>
+						
+					</div>
+														
+			</div>
+</div>
+<!-- apenas um teste -->
+<div class="col-sm-6 col-md-2 col-lg-6">
+<div class="jarviswidget jarviswidget-color-magenta" id="wid-id-103" data-widget-editbutton="false" data-widget-deletebutton="false" data-widget-togglebutton="false" data-widget-collapsed="true">
+									<header>
+										<h2>SEO</h2>				
+									</header>
+								<div>
+									<div class="widget-body">
+										<div class="widget-body ">
+											<fieldset>
+												<section>
+													<label class="label"style="color:black;">Title Metadata</label>
+													<br>
+													<label class="textarea textarea-resizable"> 										
+														<textarea rows="3" cols="80" class="custom-scroll"></textarea> 
+													</label>
+												</section>
+												<section>
+													<label class="label"style="color:black;">Description Metadata</label>
+													<br>
+													<label class="textarea textarea-resizable"> 										
+														<textarea rows="3" cols="80" class="custom-scroll"></textarea> 
+													</label>
+												</section>
+												<section>
+													<label class="label"style="color:black;">Keywords Metadata</label>
+													<br>
+													<label class="textarea textarea-resizable"> 										
+														<textarea rows="3" cols="80" class="custom-scroll"></textarea> 
+													</label>
+												</section>
+												
+												<section class="col col-12">
+													<label class="label"style="color:black;">Canonical Tag</label>
+													<br>
+													<label class="input">
+														<input type="text" size="60">
+												</section>
+												<br>
+												<div class="btn-group">
+							
+													<button class="btn btn-sm btn-success" type="button">
+														<i class="fa fa-check"></i> Salvar
+													</button>	
+													
+												</div>
+												<div class="btn-group">
+							
+													<button class="btn btn-sm btn-primary" type="button">
+														<i class="fa fa-times"></i> Cancelar
+													</button>	
+																
+												</div>
+						
+											</fieldset>
+										</div>
+									</div>
+								</div>
+</div>
+
+</div>
+				<!--
+				<div class="col-sm-6 col-md-2 col-lg-3">
+				<div class="well well-sm well-light">
+					<h3>Atributos</h3>
+					<a href="#" id="modal_link2" class="btn bg-color-blue txt-color-white">Incluir atributos</a>
+				</div>
+				</div>
+				-->
+				
+				
+
+</section>
+
+	<div id="dialog-message" title="Dialog Simple Title" class="col-sm-6 col-md-2 col-lg-3">
+		
+			<!-- NEW WIDGET START -->
+		<article>
+
+			
+			
+			<!-- Widget ID (each widget will need unique ID)-->
+			<div class="jarviswidget jarviswidget-color-blueLight" id="wid-id-1000" data-widget-editbutton="false">
+				<hr class="simple">
+										<ul id="myTab1" class="nav nav-tabs bordered">
+											<li class="active">
+												<a href="#s10" data-toggle="tab">Envio de arquivos</a>
+											</li>
+											<li>
+												<a href="#s20" data-toggle="tab">Ordenação das imagens</a>
+											</li>											
+										</ul>				
+										<div id="myTabContent1" class="padding-10">
+											<div class="tab-pane fade in active" id="s10">
+												<header>					
+													<h2>Enviar arquivos</h2>
+												</header>
+
+				<!-- widget div-->
+				
+
+					<!-- widget edit box -->
+					
+					<!-- end widget edit box -->
+
+					<!-- widget content -->
+					<div class="widget-body">
+						<span>
+						<form action="upload.php" class="dropzone" id="mydropzone"></form>
+						</span>
+					</div>
+					<!-- end widget content -->
+
+				
+				<!-- end widget div -->
+											</div>
+											
+											<div class="tab-pane fade fade out active" id="s20">
+												oi
+											</div>
+											
+										</div>
+				
+				</div>
+				
+				
+
+			</div>
+			<!-- end widget -->
+
+		</article>
+		<!-- WIDGET END -->
+			
+	</div>
+	<div id="dialog-message2" title="Dialog Simple Title">
+		<div>
+					<div class="bootstrap-duallistbox-container row"> </div>
+					<select multiple="multiple" size="20" name="duallistbox_demo" id="initializeDuallistbox" style="display: none;">
+											<option value="option1" data-sortindex="0">Peso</option>
+											<option value="option2">Tamanho</option>
+											<option value="option3" selected="selected" data-sortindex="2">Material</option>
+											<option value="option4">Embalagem</option>
+											<option value="option5" data-sortindex="4">Voltagem</option>
+											<option value="option6" selected="selected" data-sortindex="5">Diâmetro</option>
+											<option value="option7" data-sortindex="6">Força</option>
+											<option value="option8" data-sortindex="7">Rotação</option>
+											<option value="option9" data-sortindex="8">Comprimento</option>
+											<option value="option0" data-sortindex="9">Largura</option>
+										</select>
+				
+		</div>
+		<div>
+		<br>
+		Incluir um novo atributo: 
+		</div>
+	</div>		
+						
+	</div>
+	
+	
+	<div id="dialog-message3" title="Dialog Simple Title">
+		<div>
+			<fieldset>
+												<section>
+													<label class="label">Tipos de layout</label>
+													<div style="padding-left: 20px">
+														
+															<label class="radio">
+																<input type="radio" name="radio" checked="checked">
+																<i></i>Grid</label>
+															<label class="radio">
+																<input type="radio" name="radio">
+																<i></i>Tree</label>
+															<label class="radio">
+																<input type="radio" name="radio">
+																<i></i>List</label>
+													</div>	
+												</section>
+			</fieldset>
+		</div>	
+	</div>
+				</section>
+				<!-- end widget grid -->
+
+			</div>
+			<!-- END MAIN CONTENT -->
+
+		</div>
+		<!-- END MAIN PANEL -->
+
+		<!-- PAGE FOOTER -->
+		<div class="page-footer">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6">
+					<span class="txt-color-white">Code Plus<span class="hidden-xs"> - Gerenciador do Catálogo V1</span> © 2017</span>
+				</div>
+			</div>
+			<!-- end row -->
+		</div>
+		<!-- END PAGE FOOTER -->
+
+		<!-- SHORTCUT AREA : With large tiles (activated via clicking user name tag)
+		Note: These tiles are completely responsive,
+		you can add as many as you like
+		-->
+		
+		<!-- END SHORTCUT AREA -->
+
+		<!--================================================== -->
+
+		<!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
+		<script data-pace-options='{ "restartOnRequestAfter": true }' src="js/plugin/pace/pace.min.js"></script>
+
+		<!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script>
+			if (!window.jQuery) {
+				document.write('<script src="js/libs/jquery-2.1.1.min.js"><\/script>');
+			}
+		</script>
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+		<script>
+			if (!window.jQuery.ui) {
+				document.write('<script src="js/libs/jquery-ui-1.10.3.min.js"><\/script>');
+			}
+		</script>
+
+		<!-- IMPORTANT: APP CONFIG -->
+		<script src="js/app.config.js"></script>
+
+		<!-- JS TOUCH : include this plugin for mobile drag / drop touch events-->
+		<script src="js/plugin/jquery-touch/jquery.ui.touch-punch.min.js"></script> 
+
+		<!-- BOOTSTRAP JS -->
+		<script src="js/bootstrap/bootstrap.min.js"></script>
+
+		<!-- CUSTOM NOTIFICATION -->
+		<script src="js/notification/SmartNotification.min.js"></script>
+
+		<!-- JARVIS WIDGETS -->
+		<script src="js/smartwidgets/jarvis.widget.min.js"></script>
+
+		<!-- EASY PIE CHARTS -->
+		<script src="js/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
+
+		<!-- SPARKLINES -->
+		<script src="js/plugin/sparkline/jquery.sparkline.min.js"></script>
+
+		<!-- JQUERY VALIDATE -->
+		<script src="js/plugin/jquery-validate/jquery.validate.min.js"></script>
+
+		<!-- JQUERY MASKED INPUT -->
+		<script src="js/plugin/masked-input/jquery.maskedinput.min.js"></script>
+
+		<!-- JQUERY SELECT2 INPUT -->
+		<script src="js/plugin/select2/select2.min.js"></script>
+
+		<!-- JQUERY UI + Bootstrap Slider -->
+		<script src="js/plugin/bootstrap-slider/bootstrap-slider.min.js"></script>
+
+		<!-- browser msie issue fix -->
+		<script src="js/plugin/msie-fix/jquery.mb.browser.min.js"></script>
+
+		<!-- FastClick: For mobile devices -->
+		<script src="js/plugin/fastclick/fastclick.min.js"></script>
+
+		<!--[if IE 8]>
+
+		<h1>Your browser is out of date, please update your browser by going to www.microsoft.com/download</h1>
+
+		<![endif]-->
+
+		<!-- MAIN APP JS FILE -->
+		<script src="js/app.min.js"></script>
+
+		<!-- ENHANCEMENT PLUGINS : NOT A REQUIREMENT -->
+		<!-- Voice command : plugin -->
+		<script src="js/speech/voicecommand.min.js"></script>
+
+		<!-- SmartChat UI : plugin -->
+		<script src="js/smart-chat-ui/smart.chat.ui.min.js"></script>
+		<script src="js/smart-chat-ui/smart.chat.manager.min.js"></script>
+
+		<!-- PAGE RELATED PLUGIN(S)
+		<script src="..."></script>-->
+
+		<script src="js/plugin/jqgrid/jquery.jqGrid.min.js"></script>
+		<script src="js/plugin/jqgrid/grid.locale-en.min.js"></script>
+		<script src="js/plugin/jquery-touch/jquery.ui.touch-punch.min.js"></script>
+		<script src="js/plugin/dropzone/dropzone.min.js"></script>
+		<script src="js/plugin/bootstrap-duallistbox/jquery.bootstrap-duallistbox.min.js"></script>
+		<script data-pace-options='{ "restartOnRequestAfter": true }' src="js/plugin/pace/pace.min.js"></script>
+		<script src="js/plugin/summernote/summernote.min.js"></script>
+
+		<script type="text/javascript">
+			$(document).ready(function() {
+				pageSetUp();
+
+				var jqgrid_data = [{
+					id : "1",
+					nome : "Desenvolvimento web",
+					name : "test",
+					note : "note",
+					amount : "200.00"
+					
+				}, {
+					id : "2",
+					nome : "Acessoria",
+					name : "test2",
+					note : "note2",
+					amount : "300.00"
+					
+				}, {
+					id : "3",
+					nome : "Analise de SEO",
+					name : "test3",
+					note : "note3",
+					amount : "400.00"
+					
+				}, {
+					id : "4",
+					nome : "IoT",
+					name : "test",
+					note : "note",
+					amount : "200.00"
+					
+				}, {
+					id : "5",
+					nome : "Programação",
+					name : "test",
+					note : "note",
+					amount : "200.00"
+				}, {
+					id : "6",
+					nome : "Consultoria",
+					name : "test",
+					note : "note",
+					amount : "200.00"
+					
+				}, {
+					id : "7",
+					nome : "Manutenção",
+					name : "test",
+					note : "note",
+					amount : "200.00"
+					
+				}, {
+					id : "8",
+					nome : "Mobile app",
+					name : "test",
+					note : "note",
+					amount : "200.00"
+					
+				}, {
+					id : "9",
+					nome : "Hospedagem",
+					name : "test",
+					note : "note",
+					amount : "200.00"
+					
+				}, {
+					id : "10",
+					nome : "Catálogo",
+					name : "test",
+					note : "note",
+					amount : "200.00"
+					
+				}
+				];
+
+				jQuery("#jqgrid").jqGrid({
+					data : jqgrid_data,
+					datatype : "local",
+					height : 'auto',
+					width : 'auto',
+					colNames : ['Ações', 'ID', 'Nome', 'Url', 'Descrição', 'SEO - Title', 'SEO - Desc'],
+					colModel : [{
+						name : 'act',
+						index : 'act',
+						sortable : false
+					}, {
+						name : 'id',
+						index : 'id'
+					}, {
+						name : 'nome',
+						index : 'nome',
+						editable : true
+					}, {
+						name : 'url',
+						index : 'url',
+						editable : true
+					}, {
+						name : 'desc',
+						index : 'desc',
+						editable : true
+					}, {
+						name : 'seot',
+						index : 'seot',
+						editable : true
+					}, {
+						name : 'seodesc',
+						index : 'seodesc',
+						editable : true
+					}
+					],
+					rowNum : 9,
+					rowList : [10, 20, 30],
+					pager : '#pjqgrid',
+					sortname : 'id',
+					toolbarfilter : true,
+					viewrecords : true,
+					sortorder : "asc",
+					gridComplete : function() {
+						var ids = jQuery("#jqgrid").jqGrid('getDataIDs');
+						for (var i = 0; i < ids.length; i++) {
+							var cl = ids[i];
+							be = "<button class='btn btn-xs btn-default' data-original-title='Edit Row' onclick=\"jQuery('#jqgrid').editRow('" + cl + "');\"><i class='fa fa-pencil'></i></button>";
+							se = "<button class='btn btn-xs btn-default' data-original-title='Save Row' onclick=\"jQuery('#jqgrid').saveRow('" + cl + "');\"><i class='fa fa-save'></i></button>";
+							ca = "<button class='btn btn-xs btn-default' data-original-title='Cancel' onclick=\"jQuery('#jqgrid').restoreRow('" + cl + "');\"><i class='fa fa-times'></i></button>";
+							//ce = "<button class='btn btn-xs btn-default' onclick=\"jQuery('#jqgrid').restoreRow('"+cl+"');\"><i class='fa fa-times'></i></button>";
+							//jQuery("#jqgrid").jqGrid('setRowData',ids[i],{act:be+se+ce});
+							jQuery("#jqgrid").jqGrid('setRowData', ids[i], {
+								act : be + se + ca
+							});
+						}
+					},
+					editurl : "dummy.html",
+					caption : "Edição da Categoria",
+					multiselect : true,
+					autowidth : true,
+
+				});
+				jQuery("#jqgrid").jqGrid('navGrid', "#pjqgrid", {
+					edit : false,
+					add : false,
+					del : true
+				});
+				jQuery("#jqgrid").jqGrid('inlineNav', "#pjqgrid");
+				/* Add tooltips */
+				$('.navtable .ui-pg-button').tooltip({
+					container : 'body'
+				});
+
+				jQuery("#m1").click(function() {
+					var s;
+					s = jQuery("#jqgrid").jqGrid('getGridParam', 'selarrrow');
+					alert(s);
+				});
+				jQuery("#m1s").click(function() {
+					jQuery("#jqgrid").jqGrid('setSelection', "13");
+				});
+
+				// remove classes
+				$(".ui-jqgrid").removeClass("ui-widget ui-widget-content");
+				$(".ui-jqgrid-view").children().removeClass("ui-widget-header ui-state-default");
+				$(".ui-jqgrid-labels, .ui-search-toolbar").children().removeClass("ui-state-default ui-th-column ui-th-ltr");
+				$(".ui-jqgrid-pager").removeClass("ui-state-default");
+				$(".ui-jqgrid").removeClass("ui-widget-content");
+
+				// add classes
+				$(".ui-jqgrid-htable").addClass("table table-bordered table-hover");
+				$(".ui-jqgrid-btable").addClass("table table-bordered table-striped");
+				$(".ui-pg-div").removeClass().addClass("btn btn-sm btn-primary");
+				$(".ui-icon.ui-icon-plus").removeClass().addClass("fa fa-plus");
+				$(".ui-icon.ui-icon-pencil").removeClass().addClass("fa fa-pencil");
+				$(".ui-icon.ui-icon-trash").removeClass().addClass("fa fa-trash-o");
+				$(".ui-icon.ui-icon-search").removeClass().addClass("fa fa-search");
+				$(".ui-icon.ui-icon-refresh").removeClass().addClass("fa fa-refresh");
+				$(".ui-icon.ui-icon-disk").removeClass().addClass("fa fa-save").parent(".btn-primary").removeClass("btn-primary").addClass("btn-success");
+				$(".ui-icon.ui-icon-cancel").removeClass().addClass("fa fa-times").parent(".btn-primary").removeClass("btn-primary").addClass("btn-danger");
+				$(".ui-icon.ui-icon-seek-prev").wrap("<div class='btn btn-sm btn-default'></div>");
+				$(".ui-icon.ui-icon-seek-prev").removeClass().addClass("fa fa-backward");
+				$(".ui-icon.ui-icon-seek-first").wrap("<div class='btn btn-sm btn-default'></div>");
+				$(".ui-icon.ui-icon-seek-first").removeClass().addClass("fa fa-fast-backward");
+				$(".ui-icon.ui-icon-seek-next").wrap("<div class='btn btn-sm btn-default'></div>");
+				$(".ui-icon.ui-icon-seek-next").removeClass().addClass("fa fa-forward");
+				$(".ui-icon.ui-icon-seek-end").wrap("<div class='btn btn-sm btn-default'></div>");
+				$(".ui-icon.ui-icon-seek-end").removeClass().addClass("fa fa-fast-forward");
+
+			})
+
+			$(window).on('resize.jqGrid', function() {
+				$("#jqgrid").jqGrid('setGridWidth', $("#content").width());
+			})
+
+		</script>
+<script type="text/javascript">
+		
+		// DO NOT REMOVE : GLOBAL FUNCTIONS!
+		
+		$(document).ready(function() {
+			
+			pageSetUp();
+			
+			// PAGE RELATED SCRIPTS
+		
+			// switch style change
+			$('input[name="checkbox-style"]').change(function() {
+				//alert($(this).val())
+				$this = $(this);
+		
+				if ($this.attr('value') === "switch-1") {
+					$("#switch-1").show();
+					$("#switch-2").hide();
+				} else if ($this.attr('value') === "switch-2") {
+					$("#switch-1").hide();
+					$("#switch-2").show();
+				}
+		
+			}); 
+			
+			// tab - pills toggle
+			$('#show-tabs').click(function() {
+				$this = $(this);
+				if($this.prop('checked')){
+					$("#widget-tab-1").removeClass("nav-pills").addClass("nav-tabs");
+				} else {
+					$("#widget-tab-1").removeClass("nav-tabs").addClass("nav-pills");
+				}
+				
+			});			
+		
+		});
+
+		</script>
+		<!-- Your GOOGLE ANALYTICS CODE Below -->
+		<script type="text/javascript">
+			var _gaq = _gaq || [];
+			_gaq.push(['_setAccount', 'UA-XXXXXXXX-X']);
+			_gaq.push(['_trackPageview']);
+
+			(function() {
+				var ga = document.createElement('script');
+				ga.type = 'text/javascript';
+				ga.async = true;
+				ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(ga, s);
+			})();
+
+		</script>
+		<script type="text/javascript">
+		$('#modal_link').click(function() {
+				$('#dialog-message').dialog('open');
+				return false;
+			});
+		
+			$("#dialog-message").dialog({
+				autoOpen : false,
+				minWidth: 350,
+				modal : true,
+				title :"Envio de arquivos",
+				buttons : [{
+					html : "Cancel",
+					"class" : "btn btn-default",
+					click : function() {
+						$(this).dialog("close");
+					}
+				}, {
+					html : "<i class='fa fa-check'></i>&nbsp; OK",
+					"class" : "btn btn-primary",
+					click : function() {
+						$(this).dialog("close");
+					}
+				}]
+		
+			});
+		
+			/*
+			 * Remove focus from buttons
+			 */
+			$('.ui-dialog :button').blur();
+			</script>
+			<script type="text/javascript">
+		$('#modal_link2').click(function() {
+				$('#dialog-message2').dialog('open');
+				return false;
+			});
+		
+			$("#dialog-message2").dialog({
+				autoOpen : false,
+				modal : true,
+				title :"Atributos",
+				buttons : [{
+					html : "Cancel",
+					"class" : "btn btn-default",
+					click : function() {
+						$(this).dialog("close");
+					}
+				}, {
+					html : "<i class='fa fa-check'></i>&nbsp; OK",
+					"class" : "btn btn-primary",
+					click : function() {
+						$(this).dialog("close");
+					}
+				}]
+		
+			});
+		
+			/*
+			 * Remove focus from buttons
+			 */
+			$('.ui-dialog :button').blur();
+			</script>
+			<script type="text/javascript">
+		$('#modal_link3').click(function() {
+				$('#dialog-message3').dialog('open');
+				return false;
+			});
+		
+			$("#dialog-message3").dialog({
+				autoOpen : false,
+				modal : true,
+				title :"Tipo de Layout",
+				buttons : [{
+					html : "Cancel",
+					"class" : "btn btn-default",
+					click : function() {
+						$(this).dialog("close");
+					}
+				}, {
+					html : "<i class='fa fa-check'></i>&nbsp; OK",
+					"class" : "btn btn-primary",
+					click : function() {
+						$(this).dialog("close");
+					}
+				}]
+		
+			});
+		
+			/*
+			 * Remove focus from buttons
+			 */
+			$('.ui-dialog :button').blur();
+			</script>
+			<script type="text/javascript">
+			var initializeDuallistbox = $('#initializeDuallistbox').bootstrapDualListbox({
+	          nonSelectedListLabel: 'Disponiveis',
+	          selectedListLabel: 'Associados',
+	          preserveSelectionOnMove: 'moved',
+	          moveOnSelect: false,
+			  filterPlaceHolder: 'Buscar',
+			  infoText : false,
+	          nonSelectedFilter: ''
+	        });
+			</script>
+			<script type="text/javascript">
+		
+			// DO NOT REMOVE : GLOBAL FUNCTIONS!
+			
+			$(document).ready(function() {
+				
+				pageSetUp();
+
+				/*
+				 * SUMMERNOTE EDITOR
+				 */
+				
+				$('.summernote').summernote({
+					height: 200,
+					toolbar: [
+				    ['style', ['style']],
+				    ['font', ['bold', 'italic', 'underline', 'clear']],
+				    ['fontname', ['fontname']],
+				    ['color', ['color']],
+				    ['para', ['ul', 'ol', 'paragraph']],
+				    ['height', ['height']],
+				    ['table', ['table']],
+				    ['insert', ['link', 'picture', 'hr']],
+				    ['view', ['fullscreen', 'codeview', 'help']]
+
+				  ]
+				});
+			
+				/*
+				 * MARKDOWN EDITOR
+				 */
+
+/*				$("#mymarkdown").markdown({
+					autofocus:false,
+					savable:true
+				})
+*/							
+			
+			})
+
+		</script>
+			
+
+</div>
+
+	</body>
+
+</html>

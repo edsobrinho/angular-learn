@@ -1,0 +1,44 @@
+			<!-- #MAIN PANEL -->
+				<!-- col -->
+				<div class="col-xs-12 col-sm-7 col-md-7 col-lg-4">
+					<h1 class="page-title txt-color-blueDark">
+						
+						<!-- PAGE HEADER -->
+						<i class="fa-fw fa fa-home"></i> 
+							Visão Geral 
+						<span>>  
+							Árvore do catálogo
+						</span>
+					</h1>
+				</div>
+				<!-- end col -->
+				<div class="col-xs-12 col-sm-5 col-md-5 col-lg-8">
+						<ul id="sparks" class="">
+							<li class="sparks-info">
+								<div id="plugins3" class="demo plugin-demo">
+										<script>
+										
+										$(function () {
+											$("#plugins3").jstree({
+												"core" : {
+													"check_callback" : true
+												},
+												"plugins" : [ "dnd" ]
+											});
+										});
+										</script>
+										<ul>
+											<li data-jstree='{"opened":true}'>Root node
+												<ul>
+													<li>Child node 1</li>
+													<li>Child node 2</li>
+												</ul>
+											</li>
+											<li>Root node 2</li>
+										</ul>
+								</div>
+							</li>
+						</ul>
+				</div>
+			</div>
+		<!-- END #MAIN PANEL -->

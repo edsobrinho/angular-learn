@@ -1,0 +1,37 @@
+{
+  "name": "tvsync-web",
+  "authors": [
+    "Marcelo Aragao <marceloaragao@gmail.com>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.6.1",
+    "angular-route": "~1.6.1",
+    "angular-resource": "~1.6.1",
+    "angular-cookies": "^1.6.4",
+    "angular-ui": "~0.4.0",
+    "angular-ui-router": "~0.3.1",
+    "angular-bootstrap": "~2.2.0",
+    "angular-confirm-modal": "~1.2.5",
+    "angular-base64": "~2.0.5",
+    "angular-file-upload": "~2.3.4",
+    "font-awesome": "~4.6.3",
+    "angular-md5": "^0.1.10",
+    "openSans": "https://google-fonts.azurewebsites.net/googleFonts/openSans?family=Open+Sans:400italic,700italic,300,400,700",
+    "jquery-ui": "jqueryui#^1.12.1",
+    "angular-http-auth": "^1.5.0"
+  },
+  "resolutions": {
+    "angular": "1.6.1"
+  }
+}

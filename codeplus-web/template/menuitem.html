@@ -1,0 +1,8 @@
+					<li ng-repeat="item in itens">
+						<a href="#" title="{{item.title}}"><i class="fa fa-lg fa-fw {{item.icon}}"></i> <span class="menu-item-parent">{{item.title}}</span></a>
+						<ul>
+							<li ui-sref-active="active" ng-repeat="subitem in item.subitens" ng-class="{active: isActive(subitem.link)}">
+								<a ui-sref="{{subitem.link}}" title="{{subitem.title}}"><i class="fa fa-lg fa-fw {{subitem.icon}}"></i><span class="menu-item-parent ">{{subitem.title}}</span></a>
+							</li>
+						</ul>	
+					</li>

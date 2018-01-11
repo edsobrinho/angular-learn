@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jstree basic demos</title>
+	
+	<link rel="stylesheet" href="/control1/basic/dist/themes/default/style2.min.css" />
+</head>
+<body>
+	
+
+	<h1>AJAX demo</h1>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="/control1/js/jstree.min.js"></script>
+	<script src="/control1/js/jstree.dnd.js"></script>
+	<div id="plugins3" class="demo plugin-demo">
+							<ul>
+								<li data-jstree='{"opened":true}'>Root node
+									<ul>
+										<li>Child node 1</li>
+										<li>Child node 2</li>
+									</ul>
+								</li>
+								<li>Root node 2</li>
+							</ul>
+						</div>
+							<script>
+							$(function () {
+								$("#plugins3").jstree({
+									"core" : {
+										"check_callback" : true
+									},
+									"plugins" : [ "dnd" ]
+								});
+							});
+							</script>
+						</div>
+	</div>
+</body>
+</html>

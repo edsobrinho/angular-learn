@@ -1,0 +1,97 @@
+		<!-- #HEADER -->
+		<header id="header">
+			<div id="logo-group">
+
+				<!-- PLACE YOUR LOGO HERE -->
+				<span> <img src="/smartadmin/img/logo.png" alt="Code Plus"> </span>
+			</div>
+				<!-- END AJAX-DROPDOWN -->
+			</div>
+				<div>
+					<ul class="header-dropdown-list hidden-xs">
+					<li>
+						<a href="#" class="dropdown-toggle"> <img src="/smartadmin/img/blank.gif" class="flag flag-br" alt="Brasil"> <span> BR</span> <i class="fa fa-angle-down"></i> </a>
+						<ul class="dropdown-menu pull-right">
+							<li ng-class="{active: isIdiomaActive(1)}">
+								<a href="javascript:void(0);"><img src="/smartadmin/img/blank.gif" class="flag flag-br" alt="Brasil"> Português</a>
+							</li>
+							<li ng-class="{active: isIdiomaActive(2)}">
+								<a href="javascript:void(0);"><img src="/smartadmin/img/blank.gif" class="flag flag-us" alt="United States"> English</a>
+							</li>
+							<li ng-class="{active: isIdiomaActive(3)}">
+								<a href="javascript:void(0);"><img src="/smartadmin/img/blank.gif" class="flag flag-es" alt="Spanish"> Español</a>
+							</li>
+							
+						</ul>
+					</li>
+				</ul>
+			</div>
+			
+			<!-- end projects dropdown -->
+					
+			<!-- pulled right: nav area -->
+			<div class="pull-right">
+				
+				<!-- collapse menu button -->
+				<div id="hide-menu" class="btn-header pull-right">
+					<span> <a href="javascript:void(0);" data-action="toggleMenu" title="Collapse Menu"><i class="fa fa-reorder"></i></a> </span>
+				</div>
+				<!-- end collapse menu -->
+				
+				<!-- #MOBILE -->
+				<!-- Top menu profile link : this shows only when top menu is active -->
+				<ul id="mobile-profile-img" class="header-dropdown-list hidden-xs padding-5">
+					<li class="">
+						<ul class="dropdown-menu pull-right">
+							<li>
+								<a href="javascript:void(0);" class="padding-10 padding-top-0 padding-bottom-0"><i class="fa fa-cog"></i>Configurações</a>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<a href="javascript:void(0);" class="padding-10 padding-top-0 padding-bottom-0" data-action="launchFullscreen"><i class="fa fa-arrows-alt"></i> Tela <u>C</u>heia</a>
+							</li>
+							<li class="divider"></li>
+							<li>
+								<a ui-sref="login" class="padding-10 padding-top-5 padding-bottom-5" data-action="userLogout"><i class="fa fa-sign-out fa-lg"></i> <strong><u>L</u>ogout</strong></a>
+							</li>
+						</ul>
+					</li>
+				</ul>
+
+				<!-- logout button -->
+				<div id="logout" class="btn-header transparent pull-right">
+					<span> <a href="javascript:void(0)" ng-click="logout()" title="Sign Out" data-action="userLogout"><i class="fa fa-sign-out"></i></a> </span>
+				</div>
+				<!-- end logout button -->
+
+				<!-- search mobile button (this is hidden till mobile view port) -->
+				<div id="search-mobile" class="btn-header transparent pull-right">
+					<span> <a href="javascript:void(0)" title="Search"><i class="fa fa-search"></i></a> </span>
+				</div>
+				<!-- end search mobile button -->
+				
+				<!-- #SEARCH -->
+				<!-- input: search field -->
+				<form action="#ajax/search.html" class="header-search pull-right">
+					<input id="search-fld" type="text" name="param" placeholder="Find reports and more">
+					<button type="submit">
+						<i class="fa fa-search"></i>
+					</button>
+					<a href="javascript:void(0);" id="cancel-search-js" title="Cancel Search"><i class="fa fa-times"></i></a>
+				</form>
+				<!-- end input: search field -->
+
+				<!-- fullscreen button -->
+				<div id="fullscreen" class="btn-header transparent pull-right">
+					<span> <a href="javascript:void(0);" data-action="launchFullscreen" title="Full Screen"><i class="fa fa-arrows-alt"></i></a> </span>
+				</div>
+				<!-- end fullscreen button -->
+
+				<!-- multiple lang dropdown : find all flags in the flags page -->
+				
+				<!-- end multiple lang -->
+
+			</div>
+			<!-- end pulled right: nav area -->
+		</header>
+		<!-- END HEADER -->

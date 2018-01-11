@@ -1,0 +1,41 @@
+					<div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+						<div class="well no-padding">
+							<form id="login-form" class="smart-form client-form" ng-controller="LoginController" ng-submit="login(credentials)">
+								<header>
+									Acessar
+								</header>
+
+								<fieldset>
+									
+									<section>
+										<label class="label">E-mail</label>
+										<label class="input"> <i class="icon-append fa fa-user"></i>
+											<input type="email" ng-model="credentials.username">
+											<b class="tooltip tooltip-top-right"><i class="fa fa-user txt-color-teal"></i> Por favor inserir seu e-mail</b></label>
+									</section>
+
+									<section>
+										<label class="label">Senha</label>
+										<label class="input"> <i class="icon-append fa fa-lock"></i>
+											<input type="password" ng-model="credentials.password">
+											<b class="tooltip tooltip-top-right"><i class="fa fa-lock txt-color-teal"></i> Inserir sua senha</b> </label>
+										<div class="note">
+											<a href="forgotpassword.html">Esqueceu a senha?</a>
+										</div>
+									</section>
+
+									<section>
+										<label class="checkbox">
+											<input type="checkbox" name="remember" checked="">
+											<i></i>Continuar logado</label>
+									</section>
+								</fieldset>
+								<footer>
+									<button type="submit" class="btn btn-primary">
+										Entrar
+									</button>
+								</footer>
+							</form>
+						</div>
+					</div>
+					
